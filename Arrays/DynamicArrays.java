@@ -1,20 +1,3 @@
-public class DynamicArrays {
-    public static void main(String[] args) {
-        Array arr = new Array();
-        arr.insert(4,0);
-        arr.insert(3,1);
-        arr.insert(6,2);
-        arr.insert(7,1);
-
-        arr.display();
-        arr.insert(30,1);
-        arr.display();
-        arr.delete(0);
-        arr.display();
-
-    }
-
-}
 class Array{
     private int capacity = 3;
     private int[] array = new int[capacity];
@@ -99,3 +82,20 @@ Disadvantages :
 1. Costly operation for insertion and deletion due to shifting of elements
 
 */
+public class DynamicArrays {
+    public static void main(String[] args) {
+        Array arr = new Array();
+        arr.insert(4,0);
+        arr.insert(3,1);
+        arr.insert(6,2);
+        arr.insert(7,1);
+
+        arr.display();
+        arr.insert(30,1);
+        arr.display();
+        arr.delete(0);
+        arr.display();
+
+    }
+
+}
