@@ -4,6 +4,10 @@ class Array{
     private int size = 0;
 
     void insert(int element,int index){
+        if(index < 0 || index > size){
+            System.out.println("Cannot be inserted : Invalid index");
+            return;
+        }
         if (size < capacity ){
             for(int i = size - 1; i >= index; i-- ){
                 array[i + 1] = array[i];
@@ -12,7 +16,7 @@ class Array{
             size++;
         }
         else{
-            System.out.println("Cannot be inserted : Capacity full or invalid index");
+            System.out.println("Cannot be inserted : Capacity full");
         }
     }
     void delete(int index){// deletion by index
@@ -38,6 +42,9 @@ class Array{
     void update(int element, int index){
         if (index <= size && index >= 0){
             array[index] = element;
+        }
+        else{
+             System.out.println("index exceeds size of the array");
         }
     }
     int get(int index){
