@@ -13,10 +13,9 @@ class Array{
     void resize(){
         capacity = 2 * capacity;
         int[] dummyArray = new int[capacity];
-        for(int i = 0; i < size; i++){
-            dummyArray[i] = array[i];
-        }
-        array = dummyArray; // note : in java, arrays are onject reference
+        // copying
+        System.arraycopy(array, 0, dummyArray, 0, size);
+        array = dummyArray; // note : in java, arrays are object reference
     }
 
     void insert(int element,int index){
