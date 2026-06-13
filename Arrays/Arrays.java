@@ -1,3 +1,11 @@
+/* Applications of Arrays:
+
+Storing homogeneous data.
+Matrix and table representation.
+Implementing stacks, queues, and heaps.
+Searching and sorting operations.
+ */
+
 class Array{
     private final int capacity = 5;
     private int[] array = new int[capacity ];

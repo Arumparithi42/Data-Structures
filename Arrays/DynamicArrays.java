@@ -1,3 +1,10 @@
+/* Applications of Dynamic Arrays:
+
+Handling data whose size is unknown.
+Implemented in C++ vectors, ArrayLists and python list.
+Storing dynamically growing collections such as playlists (e.g song playlist), browser history, and social media data (posts, comments).
+Building flexible data structures as in arrays. */
+
 class Array{
     private int capacity = 3;
     private int[] array = new int[capacity];
