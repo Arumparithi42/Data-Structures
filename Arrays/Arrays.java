@@ -4,6 +4,7 @@ Storing homogeneous data.
 Matrix and table representation.
 Implementing stacks, queues, and heaps.
 Searching and sorting operations.
+Used in two pointers and slideing window algorithms
  */
 
 class Array{

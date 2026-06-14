@@ -1,7 +1,7 @@
 /* Applications of Dynamic Arrays:
-
+(same as arrays)
 Handling data whose size is unknown.
-Implemented in C++ vectors, ArrayLists and python list.
+Implemented in C++ vectors, Java ArrayLists and python list.
 Storing dynamically growing collections such as playlists (e.g song playlist), browser history, and social media data (posts, comments).
 Building flexible data structures as in arrays. */
 
