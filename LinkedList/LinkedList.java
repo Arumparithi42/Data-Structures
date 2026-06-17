@@ -19,7 +19,7 @@ class Node{
 public class LinkedList {
     Node head = null;
 
-    void display(){
+    public void display(){
         Node temp = head;
         while(temp != null){
             System.out.print(temp.data + " ");
@@ -27,13 +27,13 @@ public class LinkedList {
         }
         System.out.println();
     }
-    void insertAtFirst(int data){
+    public void insertAtFirst(int data){
         Node newNode = new Node(data);
 
         newNode.next = head;
         head = newNode;
     }
-    void insertAtLast(int data){
+    public void insertAtLast(int data){
         if(head == null){
             insertAtFirst(data);
             return;
@@ -47,7 +47,7 @@ public class LinkedList {
         }
         temp.next = newNode;
     }
-    void insert(int data, int index){
+    public void insert(int data, int index){
         if (index < 0){
             System.out.println("Can't be inserted : negative index");
             return;
@@ -70,14 +70,14 @@ public class LinkedList {
         newNode.next = temp.next;
         temp.next = newNode;
     }
-    void deleteAtFirst(){
+    public void deleteAtFirst(){
          if (head == null){
             System.out.println("Can't be deleted : The list is already empty");
             return;
         }
         head = head.next;
     }
-    void deleteAtLast(){
+    public void deleteAtLast(){
         Node temp = head;
         if (temp == null){
             System.out.println("Can't be deleted : The list is already empty");
@@ -93,7 +93,7 @@ public class LinkedList {
         }
         temp.next = null;
     }
-    void delete(int index){
+    public void delete(int index){
         if (index < 0){
             System.out.println("Can't be deleted : negative index");
             return;
@@ -113,7 +113,7 @@ public class LinkedList {
         temp.next = temp.next.next;
     }
 
-    void set(int data, int index){
+    public void set(int data, int index){
         if (index < 0){
             System.out.println("Can't be set : negative index");
             return;
