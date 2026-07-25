@@ -13,6 +13,6 @@ public class Subset {
             return;
         }
         subset(p + up.charAt(0), up.substring(1));
-        subset(p + "", up.substring(1));
+        subset(p, up.substring(1));
     }
 }
